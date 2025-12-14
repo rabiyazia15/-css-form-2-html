@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <style>
+   * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0px;
+        background-color: rgb(138, 137 ,135);
+        font-family: Arial, sans-serif;
+    }
+    .page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    .form{
+        background-color: rgb(230, 183, 122);
+        padding: 30px;
+        width: 500px;
+        max-width: 100%;}
+
+       { flex-direction: column;
+        gap: 15px;
+    }
+    h2{
+        text-align: center;
+    }
+    .row {
+        display: flex;
+        gap: 15px;
+    }
+    input,
+    textarea {
+     padding: 10px;
+     width: 100%;
+     font-size: 14px;
+    }
+    textarea{
+        resize: vertical;
+    }
+    button {
+        padding: 15px;
+        background-color: papayawhip;
+        color: aquamarine;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    /* table */
+    @media (max-width:768px) {
+    .form{
+       width: 100%;
+       .row{
+flex-direction: column;
+
+    }
+    /* mobile */
+    @media (min-width:356px) {
+    .form{
+        padding: 20px;
+        padding-top: 1px;
+    }
+    }
+</style>
+ <body>
+    <div class="page">
+        <form class="form">
+            <h2>Contect Us</h2>
+            
+          <div class="row">
+            <input type="text" name="name" placeholder="Full name"/> 
+            <input type="text"name="name" placeholder="Last name"/>
+            </div>
+            <input type="text"email="email" placeholder="Email"
+            <textarea placeholder="Message"></textarea>
+            <button>Send Message</button>
+            </form>
+        </div>
+    
+ </body>
+ </html>
